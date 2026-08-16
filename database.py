@@ -1,4 +1,3 @@
-import os
 import mysql.connector
 from mysql.connector import Error
 from werkzeug.security import generate_password_hash
@@ -6,7 +5,13 @@ from werkzeug.security import generate_password_hash
 
 def get_connection():
     """Return a new MySQL connection using environment-based configuration."""
-    return mysql.connector.connect(host=os.getenv("MYSQL_HOST", "localhost"), port=int(os.getenv("MYSQL_PORT", "3306")), user=os.getenv("MYSQL_USER", "root"), password=os.getenv("MYSQL_PASSWORD", ""), database=os.getenv("MYSQL_DATABASE", "VPSHostingDB"))
+    return mysql.connector.connect(
+        host="127.0.0.1",
+        port=3306,
+        user="root",
+        password="Amin*1382",
+        database="VPSHostingDB",
+    )
 
 
 def fetch_all(query, params=()):
