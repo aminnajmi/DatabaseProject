@@ -24,3 +24,6 @@ The app creates a default administrator when it first connects successfully:
 - Password: `Admin@123`
 
 Change the Flask secret in production with `FLASK_SECRET_KEY`. All database values are passed through parameterized MySQL connector queries; no ORM is used.
+
+## Powered by Graphyfy for easier development
+<img width="1009" height="866" alt="Screenshot 2026-09-25 at 23 30 27" src="https://github.com/user-attachments/assets/6a59d5ab-31b1-44ea-b53f-9caa207e78fa" />
